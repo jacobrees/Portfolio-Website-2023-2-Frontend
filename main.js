@@ -23,7 +23,7 @@ gsap.from(".my-expertise-title", {
   ease: "power4.out",
 });
 
-const tl = gsap.timeline({
+const aboutMeTl = gsap.timeline({
   scrollTrigger: {
     trigger: ".about-me-title",
     start: "top bottom",
@@ -32,9 +32,11 @@ const tl = gsap.timeline({
   },
 });
 
-tl.to(".about-me-title", {
+aboutMeTl.to(".about-me-title", {
   x: 150,
 })
+
+
 
 const projects = gsap.utils.toArray(".project-container")
 
@@ -44,7 +46,7 @@ projects.forEach((project) => {
       trigger: project,
       start: "top bottom",
     },
-    y: 50,
+    y: 100,
     opacity: 0,
     duration: 1,
     ease: "power4.out",
