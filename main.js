@@ -26,17 +26,6 @@ new Typed(".dynamic-description-text", {
   loop: true,
 });
 
-gsap.from(".my-expertise-title", {
-  scrollTrigger: {
-    trigger: ".my-expertise-title",
-    start: "top bottom",
-  },
-  y: 50,
-  opacity: 0,
-  duration: 1,
-  ease: "power4.out",
-});
-
 const aboutMeTl = gsap.timeline({
   scrollTrigger: {
     trigger: ".about-me-title",
@@ -101,5 +90,44 @@ const project3Tl = gsap.timeline({
 
 project3Tl.from(".project-3", {
   x: 150,
+  opacity: 0,
+});
+
+const ContactTitleTl = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".contact-title",
+    start: "top bottom",
+    scrub: 1,
+  },
+});
+ContactTitleTl.to(".contact-title", {
+  x: 150,
+});
+
+const contactIconTl1 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".contact-link-icon-1",
+    start: "top bottom",
+    end: "top center",
+    scrub: 1,
+  },
+});
+
+contactIconTl1.from(".contact-link-icon-1", {
+  x: -50,
+  opacity: 0,
+});
+
+const contactIconTl2 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".contact-link-icon-2",
+    start: "top bottom",
+    end: "top center",
+    scrub: 1,
+  },
+});
+
+contactIconTl2.from(".contact-link-icon-2", {
+  x: 50,
   opacity: 0,
 });
