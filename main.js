@@ -34,6 +34,20 @@ aboutMeTl.to(".about-me-title", {
   x: 150,
 });
 
+const projectTitleTl = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".projects-title",
+    start: "top bottom",
+    end: "top center",
+    scrub: 1,
+  },
+});
+
+projectTitleTl.from(".projects-title", {
+
+  opacity: 0,
+});
+
 const project1Tl = gsap.timeline({
   scrollTrigger: {
     trigger: ".project-1",
