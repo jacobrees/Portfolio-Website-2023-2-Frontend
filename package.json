@@ -12,6 +12,7 @@
     "vite": "^4.2.0"
   },
   "dependencies": {
+    "gsap": "file:gsap-bonus.tgz",
     "typed.js": "^2.0.15"
   }
 }
