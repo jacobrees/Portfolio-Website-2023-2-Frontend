@@ -22,12 +22,15 @@ gsap.from(".my-expertise-title", {
   ease: "power4.out",
 });
 
-gsap.to(".about-me-title", {
+const tl = gsap.timeline({
   scrollTrigger: {
     trigger: ".about-me-title",
     start: "top bottom",
+    scrub: 1,
+    markers: true,
   },
+});
+
+tl.to(".about-me-title", {
   x: 150,
-  
-  duration: 1,
 })
