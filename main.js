@@ -3,6 +3,21 @@ import Typed from "typed.js";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+const navLinks = document.querySelectorAll(".nav-link");
+
+navLinks.forEach((navLink) => {
+  navLink.addEventListener("click", (e) => {
+    e.preventDefault();
+    const id = navLink.textContent.toLowerCase();
+    const section = document.getElementById(id);
+    const position = section.offsetTop - 80;
+    window.scrollTo({
+      top: position,
+      behavior: "smooth",
+    });
+  });
+});
+
 gsap.registerPlugin(ScrollTrigger);
 
 new Typed(".dynamic-description-text", {
@@ -44,7 +59,6 @@ const projectTitleTl = gsap.timeline({
 });
 
 projectTitleTl.from(".projects-title", {
-
   opacity: 0,
 });
 
