@@ -1,3 +1,4 @@
+/* XL devices (default) */
 * {
   margin: 0;
   padding: 0;
@@ -149,7 +150,6 @@ body {
   justify-content: space-between;
   margin: 15px 0;
   width: 100%;
- 
 }
 
 .project-content-container-invert {
@@ -204,7 +204,7 @@ body {
 
 .website-link {
   color: white;
-  background-color: #5D6679;
+  background-color: #5d6679;
   text-decoration: none;
   padding: 5px;
   border-radius: 15%;
@@ -212,8 +212,45 @@ body {
 
 .github-link {
   color: white;
-  background-color: #5D6679;
+  background-color: #5d6679;
   text-decoration: none;
   padding: 5px;
   border-radius: 15%;
+}
+
+/* Large devices */
+@media only screen and (max-width: 1199.98px) {
+  .project-container {
+    margin-bottom: 50px;
+  }
+  .project-description-container {
+    margin: 0;
+  }
+  .project-content-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 80%;
+  }
+  .project-content-container-invert {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 80%;
+  }
+}
+
+/* Medium devices */
+@media only screen and (max-width: 991.98px) {
+  /* ...code... */
+}
+
+/* Small devices */
+@media only screen and (max-width: 767.98px) {
+  .project-content-container {
+    width: 90%;
+  }
+  .project-content-container-invert {
+    width: 90%;
+  }
 }
