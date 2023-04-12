@@ -4,6 +4,9 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const navLinks = document.querySelectorAll(".nav-link");
+const mobileNavLinks = document.querySelectorAll(".mobile-nav-link");
+const openNavButton = document.querySelector(".hamburger");
+const mobileNav = document.querySelector(".mobile-nav");
 
 navLinks.forEach((navLink) => {
   navLink.addEventListener("click", (e) => {
@@ -16,6 +19,30 @@ navLinks.forEach((navLink) => {
       behavior: "smooth",
     });
   });
+});
+
+mobileNavLinks.forEach((navLink) => {
+  navLink.addEventListener("click", (e) => {
+    e.preventDefault();
+    const id = navLink.textContent.toLowerCase();
+    const section = document.getElementById(id);
+    const position = section.offsetTop - 80;
+    window.scrollTo({
+      top: position,
+      behavior: "smooth",
+    });
+    mobileNav.classList.remove("open");
+  });
+});
+
+openNavButton.addEventListener("click", () => {
+  mobileNav.classList.add("open");
+});
+
+const closeNavButton = document.querySelector(".close-navigation");
+
+closeNavButton.addEventListener("click", () => {
+  mobileNav.classList.remove("open");
 });
 
 gsap.registerPlugin(ScrollTrigger);
@@ -61,7 +88,7 @@ const project1Tl = gsap.timeline({
 });
 
 project1Tl.from(".project-1", {
- y: 150,
+  y: 150,
   opacity: 0,
 });
 
@@ -89,7 +116,7 @@ const project3Tl = gsap.timeline({
 });
 
 project3Tl.from(".project-3", {
- y: 150,
+  y: 150,
   opacity: 0,
 });
 
