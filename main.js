@@ -27,7 +27,6 @@ const aboutMeTl = gsap.timeline({
     trigger: ".about-me-title",
     start: "top bottom",
     scrub: 1,
-    markers: true,
   },
 });
 
@@ -41,7 +40,6 @@ const project1Tl = gsap.timeline({
     start: "top bottom",
     end: "top center",
     scrub: 1,
-    markers: true,
   },
 });
 
@@ -56,7 +54,6 @@ const project2Tl = gsap.timeline({
     start: "top bottom",
     end: "top center",
     scrub: 1,
-    markers: true,
   },
 });
 
@@ -71,7 +68,6 @@ const project3Tl = gsap.timeline({
     start: "top bottom",
     end: "top center",
     scrub: 1,
-    markers: true,
   },
 });
 
