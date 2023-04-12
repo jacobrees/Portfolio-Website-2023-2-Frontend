@@ -7,6 +7,7 @@ const navLinks = document.querySelectorAll(".nav-link");
 const mobileNavLinks = document.querySelectorAll(".mobile-nav-link");
 const openNavButton = document.querySelector(".hamburger");
 const mobileNav = document.querySelector(".mobile-nav");
+const closeNavButton = document.querySelector(".close-navigation");
 
 navLinks.forEach((navLink) => {
   navLink.addEventListener("click", (e) => {
@@ -38,8 +39,6 @@ mobileNavLinks.forEach((navLink) => {
 openNavButton.addEventListener("click", () => {
   mobileNav.classList.add("open");
 });
-
-const closeNavButton = document.querySelector(".close-navigation");
 
 closeNavButton.addEventListener("click", () => {
   mobileNav.classList.remove("open");
