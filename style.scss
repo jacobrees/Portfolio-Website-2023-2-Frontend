@@ -91,6 +91,10 @@ body {
 
 .about-me-section {
   height: 100vh;
+  min-height: 600px;
+  width: 100%;
+  max-width: 1800px;
+  margin: 0 auto;
   position: relative;
   background-color: #181a1d;
 }
