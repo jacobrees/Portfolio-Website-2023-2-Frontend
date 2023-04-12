@@ -292,6 +292,10 @@ body {
     margin: 0 auto;
     width: 80%;
   }
+
+  .contact-title {
+    font-size: 175px;
+  }
 }
 
 /* Medium devices */
@@ -304,6 +308,10 @@ body {
     width: 100%;
 
     padding: 0 35px;
+  }
+
+  .contact-title {
+    display: none;
   }
 }
 
@@ -340,5 +348,9 @@ body {
   }
   .project-content-container-invert {
     width: 90%;
+  }
+
+  .contact-icon {
+    width: 60px;
   }
 }
