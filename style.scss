@@ -247,6 +247,22 @@ body {
 
 /* Small devices */
 @media only screen and (max-width: 767.98px) {
+  .name {
+    font-size: 64px;
+  }
+
+  .dynamic-description-text {
+    font-size: 24px;
+  }
+
+  .web-developer-description {
+    font-size: 32px;
+  }
+
+  .portfolio-title {
+    font-size: 64px;
+  }
+
   .project-content-container {
     width: 90%;
   }
