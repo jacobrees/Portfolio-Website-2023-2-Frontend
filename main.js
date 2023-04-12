@@ -3,7 +3,6 @@ import Typed from "typed.js";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-
 gsap.registerPlugin(ScrollTrigger);
 
 new Typed(".dynamic-description-text", {
@@ -34,11 +33,9 @@ const aboutMeTl = gsap.timeline({
 
 aboutMeTl.to(".about-me-title", {
   x: 150,
-})
+});
 
-
-
-const projects = gsap.utils.toArray(".project-container")
+const projects = gsap.utils.toArray(".project-container");
 
 projects.forEach((project) => {
   gsap.from(project, {
@@ -50,5 +47,5 @@ projects.forEach((project) => {
     opacity: 0,
     duration: 1,
     ease: "power4.out",
-  })
-})
+  });
+});
