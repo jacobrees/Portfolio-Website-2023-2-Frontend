@@ -61,7 +61,7 @@ const project1Tl = gsap.timeline({
 });
 
 project1Tl.from(".project-1", {
-  x: 150,
+ y: 150,
   opacity: 0,
 });
 
@@ -75,7 +75,7 @@ const project2Tl = gsap.timeline({
 });
 
 project2Tl.from(".project-2", {
-  x: -150,
+  y: 150,
   opacity: 0,
 });
 
@@ -89,7 +89,7 @@ const project3Tl = gsap.timeline({
 });
 
 project3Tl.from(".project-3", {
-  x: 150,
+ y: 150,
   opacity: 0,
 });
 
