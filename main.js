@@ -72,6 +72,6 @@ const project3Tl = gsap.timeline({
 });
 
 project3Tl.from(".project-3", {
-  x: 150,
+  y: 150,
   opacity: 0,
 });
