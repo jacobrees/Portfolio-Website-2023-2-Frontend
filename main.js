@@ -35,17 +35,47 @@ aboutMeTl.to(".about-me-title", {
   x: 150,
 });
 
-const projects = gsap.utils.toArray(".project-container");
+const project1Tl = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".project-1",
+    start: "top bottom",
+    end: "top center",
+    scrub: 1,
+    markers: true,
+  },
+});
 
-projects.forEach((project) => {
-  gsap.from(project, {
-    scrollTrigger: {
-      trigger: project,
-      start: "top bottom",
-    },
-    y: 100,
-    opacity: 0,
-    duration: 1,
-    ease: "power4.out",
-  });
+project1Tl.from(".project-1", {
+  x: 150,
+  opacity: 0,
+});
+
+const project2Tl = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".project-2",
+    start: "top bottom",
+    end: "top center",
+    scrub: 1,
+    markers: true,
+  },
+});
+
+project2Tl.from(".project-2", {
+  x: -150,
+  opacity: 0,
+});
+
+const project3Tl = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".project-3",
+    start: "top bottom",
+    end: "top center",
+    scrub: 1,
+    markers: true,
+  },
+});
+
+project3Tl.from(".project-3", {
+  x: 150,
+  opacity: 0,
 });
