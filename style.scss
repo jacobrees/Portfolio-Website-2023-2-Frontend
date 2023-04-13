@@ -1,4 +1,5 @@
 /* XL devices (default) */
+
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +10,36 @@
 body {
   background-color: #181a1d;
   color: white;
+}
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+
+.blind {
+  width: 20%;
+  height: 100%;
+  background-color: #ffffff;
+  z-index: 9999;
+}
+
+.preloader-logo {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 70px;
+  z-index: 10001;
+  color: #181a1d;
 }
 
 .navbar {

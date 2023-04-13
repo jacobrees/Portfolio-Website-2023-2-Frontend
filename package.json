@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "gsap": "file:gsap-bonus.tgz",
+    "imagesloaded": "^5.0.0",
     "typed.js": "^2.0.15"
   }
 }

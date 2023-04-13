@@ -2,6 +2,23 @@ import "./style.scss";
 import Typed from "typed.js";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import imagesLoaded from "imagesloaded";
+
+const content = document.querySelector("body");
+
+imagesLoaded(content).on("done", (instance) => {
+  gsap.to(".preloader-logo", {
+    delay: 0.5,
+    scale: 0,
+  });
+  gsap.to(".blind", {
+    delay: 1,
+    duration: 1,
+    stagger: 0.1,
+    y: "-100%",
+    ease: "power4.out",
+  });
+});
 
 const navLinks = document.querySelectorAll(".nav-link");
 const mobileNavLinks = document.querySelectorAll(".mobile-nav-link");
