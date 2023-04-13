@@ -90,6 +90,7 @@ body {
   text-decoration: none;
   font-size: 12px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .hamburger {
@@ -366,6 +367,7 @@ body {
   }
 
   .hamburger {
+    cursor: pointer;
     filter: invert(100%);
     width: 50px;
     display: block;
@@ -409,6 +411,7 @@ body {
     text-align: center;
     font-weight: bold;
     text-transform: uppercase;
+    cursor: pointer;
   }
 
   .mobile-resume-link {
@@ -420,6 +423,7 @@ body {
     text-align: center;
     font-weight: bold;
     text-transform: uppercase;
+    cursor: pointer;
   }
 
   .open {
