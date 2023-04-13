@@ -94,46 +94,24 @@ projectTitleTl.from(".projects-title", {
   opacity: 0,
 });
 
-const project1Tl = gsap.timeline({
-  scrollTrigger: {
-    trigger: ".project-1",
-    start: "top bottom",
-    end: "top center",
-    scrub: 1,
-  },
-});
+const projectTls = [];
 
-project1Tl.from(".project-1", {
-  y: 150,
-  opacity: 0,
-});
+document.querySelectorAll(".project-container").forEach((projectContainer) => {
+  const projectTl = gsap.timeline({
+    scrollTrigger: {
+      trigger: projectContainer,
+      start: "top bottom",
+      end: "top center",
+      scrub: 1,
+    },
+  });
 
-const project2Tl = gsap.timeline({
-  scrollTrigger: {
-    trigger: ".project-2",
-    start: "top bottom",
-    end: "top center",
-    scrub: 1,
-  },
-});
+  projectTl.from(projectContainer, {
+    y: 150,
+    opacity: 0,
+  });
 
-project2Tl.from(".project-2", {
-  y: 150,
-  opacity: 0,
-});
-
-const project3Tl = gsap.timeline({
-  scrollTrigger: {
-    trigger: ".project-3",
-    start: "top bottom",
-    end: "top center",
-    scrub: 1,
-  },
-});
-
-project3Tl.from(".project-3", {
-  y: 150,
-  opacity: 0,
+  projectTls.push(projectTl);
 });
 
 const ContactTitleTl = gsap.timeline({
