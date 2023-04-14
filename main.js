@@ -94,8 +94,6 @@ projectTitleTl.from(".projects-title", {
   opacity: 0,
 });
 
-const projectTls = [];
-
 document.querySelectorAll(".project-container").forEach((projectContainer) => {
   const projectTl = gsap.timeline({
     scrollTrigger: {
@@ -110,8 +108,6 @@ document.querySelectorAll(".project-container").forEach((projectContainer) => {
     y: 150,
     opacity: 0,
   });
-
-  projectTls.push(projectTl);
 });
 
 const ContactTitleTl = gsap.timeline({
