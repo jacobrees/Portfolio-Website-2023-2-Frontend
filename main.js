@@ -64,7 +64,7 @@ closeNavButton.addEventListener("click", () => {
 gsap.registerPlugin(ScrollTrigger);
 
 new Typed(".dynamic-description-text", {
-  strings: ["Front End", "Creative", "Full Stack"],
+  strings: ["Front End", "Back End", "Full Stack", "Creative"],
   typeSpeed: 100,
   loop: true,
 });
